@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Report - Week 2</title>
+  <style>
+    /* Base styling */
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e6f4ea, #f4fff8);
+      color: #333;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffffcc;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(12px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    h1 {
+      color: #2e7d32;
+      text-align: center;
+      font-size: 2.4em;
+      text-shadow: 1px 1px 2px #c8e6c9;
+      margin-bottom: 10px;
+      animation: textPop 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #388e3c;
+      margin: 10px 0;
+      font-weight: 600;
+      font-size: 1.3em;
+    }
+
+    h3 {
+      color: #1b5e20;
+      margin-top: 25px;
+      animation: fadeSlide 1.3s ease;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-left: 10px;
+      animation: fadeSlide 1.3s ease;
+    }
+
+    ul li {
+      background: #e8f5e9;
+      padding: 10px 15px;
+      margin: 8px 0;
+      border-left: 5px solid #4caf50;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(76, 175, 80, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: translateX(10px);
+      background: #c8e6c9;
+      box-shadow: 0 6px 18px rgba(76, 175, 80, 0.25);
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .images img {
+      width: 40%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 35px rgba(76, 175, 80, 0.3);
+    }
+
+    /* Floating leaves */
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('https://cdn-icons-png.flaticon.com/512/7662/7662806.png') no-repeat center/contain;
+      opacity: 0.2;
+      animation: floatLeaf 8s ease-in-out infinite;
+    }
+
+    .leaf:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .leaf:nth-child(2) { bottom: 10%; right: 8%; animation-delay: 3s; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes textPop {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes floatLeaf {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(10deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container { padding: 25px; }
+      h1 { font-size: 1.9em; }
+      h2 { font-size: 1.1em; }
+      .images img { width: 80%; max-width: 250px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+
+  <div class="container">
+    <h1>WEEKLY REPORT</h1>
+    <h2>WEEK – 2 (From 20-05-24 to 25-05-24)</h2>
+    <h2>Objective: Survey on the Range of Awareness of Internet Usage in Village</h2>
+    <h2>Detailed Report</h2>
+
+    <h3>Day 1:</h3>
+    <ul>
+      <li>Met with local authorities to discuss the possibility of expanding internet coverage in the village.</li>
+      <li>Explored options for installing additional Wi-Fi hotspots or improving existing infrastructure.</li>
+    </ul>
+
+    <h3>Day 2:</h3>
+    <ul>
+      <li>Made significant progress in raising awareness about the importance of internet access in the village.</li>
+      <li>Received commitments from local leaders to prioritize internet infrastructure development.</li>
+      <li>Planned future activities such as fundraising events and further educational workshops to continue promoting internet usage and digital literacy in the community.</li>
+    </ul>
+
+    <h3>Day 3:</h3>
+    <ul>
+      <li>Launched an awareness campaign to educate villagers about the importance of internet access.</li>
+      <li>Distributed flyers and held informational sessions to highlight the ways the internet can improve daily life, such as accessing educational resources and connecting with loved ones.</li>
+    </ul>
+
+    <h3>Day 4:</h3>
+    <ul>
+      <li>Economic Opportunities: The internet has opened up new avenues for income through online businesses and remote work.</li>
+      <li>Different training programs were provided to the people to make them digitally active.</li>
+    </ul>
+
+    <h3>Day 5:</h3>
+    <ul>
+      <li>There’s a noticeable increase in digital transactions, particularly in villages.</li>
+    </ul>
+
+    <h3>Day 6:</h3>
+    <ul>
+      <li>Affordable smartphones and government initiatives on digital literacy have contributed to this growth.</li>
+    </ul>
+
+    <div class="images">
+      <img src="week21.jpeg" alt="Week 2 Activity 1">
+      <img src="week22.jpeg" alt="Week 2 Activity 2">
+    </div>
+  </div>
+</body>
+</html>
+

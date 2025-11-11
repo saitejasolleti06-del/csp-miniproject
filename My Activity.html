@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Activity</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e6f4ea, #f4fff8);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffffb3;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 1s ease forwards;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2e7d32;
+      font-size: 2.4em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #c8e6c9;
+      animation: textPop 1s ease;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    ul li {
+      background: #e8f5e9;
+      border-left: 5px solid #4caf50;
+      padding: 14px 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(76, 175, 80, 0.15);
+      transition: all 0.3s ease;
+      animation: fadeSlide 1.2s ease;
+    }
+
+    ul li:hover {
+      transform: translateX(10px);
+      background: #c8e6c9;
+      box-shadow: 0 6px 18px rgba(76, 175, 80, 0.25);
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #1b5e20;
+      font-weight: 600;
+      font-size: 1.1em;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #2e7d32;
+    }
+
+    /* Subtle Leaf Accent Animation */
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('https://cdn-icons-png.flaticon.com/512/7662/7662806.png') no-repeat center/contain;
+      opacity: 0.2;
+      animation: floatLeaf 8s ease-in-out infinite;
+    }
+
+    .leaf:nth-child(1) {
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .leaf:nth-child(2) {
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 4s;
+    }
+
+    @keyframes floatLeaf {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(15deg);
+      }
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes textPop {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      ul li a {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+
+  <div class="container">
+    <h1>My Activity</h1>
+    <ul>
+      <li><a href="week 1.html">Week 1</a></li>
+      <li><a href="week 2.html">Week 2</a></li>
+      <li><a href="week 3.html">Week 3</a></li>
+      <li><a href="week 4.html">Week 4</a></li>
+      <li><a href="week 5.html">Week 5</a></li>
+      <li><a href="week 6.html">Week 6</a></li>
+    </ul>
+  </div>
+</body>
+</html>

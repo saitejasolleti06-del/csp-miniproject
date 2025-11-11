@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internet Fraud Awareness</title>
+  <style>
+    /* 🌿 Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #a8e6cf, #dcedc1, #e0f7fa);
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px 50px;
+      box-shadow: 0 8px 40px rgba(0, 100, 80, 0.2);
+      animation: fadeIn 1.2s ease-in-out;
+      backdrop-filter: blur(10px);
+    }
+
+    /* ✨ Heading Styles */
+    h1 {
+      text-align: center;
+      color: #004d40;
+      font-size: 2.8em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 8px #00796b, 0 0 16px #00796b;
+      }
+      to {
+        text-shadow: 0 0 20px #26a69a, 0 0 30px #26a69a;
+      }
+    }
+
+    h2 {
+      color: #00695c;
+      border-left: 6px solid #26a69a;
+      padding-left: 12px;
+      margin-top: 40px;
+      font-size: 1.6em;
+      position: relative;
+      animation: fadeInUp 1s ease;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 80px;
+      height: 3px;
+      background: #26a69a;
+      border-radius: 2px;
+      opacity: 0.6;
+    }
+
+    p, li {
+      font-size: 1.05em;
+      line-height: 1.8;
+      color: #333;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 25px;
+      margin-top: 15px;
+    }
+
+    /* 🖼️ Image Gallery */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .image-link {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .image-link img {
+      width: 330px;
+      height: 210px;
+      object-fit: cover;
+      filter: brightness(0.9) sepia(0.2) hue-rotate(60deg) saturate(1.3);
+      transition: transform 0.6s ease, filter 0.5s ease;
+    }
+
+    .image-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 121, 107, 0.4);
+    }
+
+    .image-link:hover img {
+      transform: scale(1.1);
+      filter: brightness(1.05) sepia(0.1) hue-rotate(30deg);
+    }
+
+    /* ✨ Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 📱 Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 25px;
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      .image-link img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 25px;
+      margin-top: 30px;
+      font-size: 0.95em;
+      background: rgba(255, 255, 255, 0.6);
+      border-top: 2px solid #a5d6a7;
+      animation: fadeIn 2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Internet Fraud Awareness</h1>
+
+    <p>
+      Internet fraud involves using online services and software with access to
+      the internet to defraud or take advantage of victims. The term "internet
+      fraud" generally covers cybercrime activity that takes place over the
+      internet or on email, including crimes like identity theft, phishing, and
+      other hacking activities designed to scam people out of money.
+    </p>
+
+    <p>
+      Internet scams that target victims through online services account for
+      millions of dollars worth of fraudulent activity every year. And the
+      figures continue to increase as internet usage expands and cyber-criminal
+      techniques become more sophisticated.
+    </p>
+
+    <h2>Types of Internet Fraud</h2>
+    <ul>
+      <li><strong>Phishing and spoofing:</strong> Using email or fake websites to steal user data.</li>
+      <li><strong>Data breach:</strong> Stealing sensitive data from secure systems.</li>
+      <li><strong>Denial of service (DoS):</strong> Disrupting online access intentionally.</li>
+      <li><strong>Malware:</strong> Infecting systems to steal or damage data.</li>
+      <li><strong>Ransomware:</strong> Locking users out of data until a ransom is paid.</li>
+      <li><strong>Business email compromise:</strong> Targeting organizations via fraudulent emails.</li>
+    </ul>
+
+    <h2>Greeting Card Scams</h2>
+    <p>
+      Many internet fraud attacks exploit popular events like holidays. Hackers
+      embed malicious software inside greeting cards, downloading malware when opened.
+    </p>
+
+    <h2>Credit Card Scams</h2>
+    <p>
+      Cybercriminals steal credit or debit card details to make unauthorized purchases.
+    </p>
+
+    <h2>How To Protect Yourself</h2>
+    <p>
+      Stay vigilant online. Avoid suspicious links or payments to strangers. Use strong passwords,
+      enable 2FA, and monitor bank activity regularly.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      Tackling internet fraud in villages requires awareness and digital literacy.
+      Educating rural populations on cybersecurity ensures safer online engagement.
+    </p>
+
+    <!-- 🖼️ Green-tinted Animated Gallery -->
+    <div class="image-container">
+      <div class="image-link"><img src="https://cdn.pixabay.com/photo/2022/08/12/21/43/hacker-7382500_640.jpg" alt="Cybercrime Image 1"></div>
+      <div class="image-link"><img src="https://intersys.co.uk/wp-content/uploads/Phishing-email-graphic-1280x1163.jpg" alt="Cybercrime Image 2"></div>
+      <div class="image-link"><img src="https://th.bing.com/th/id/OIP.NXYRVjXZ9ZZSB3Y8UFRF1AHaD4?w=1200&h=630&rs=1&pid=ImgDetMain" alt="Cybercrime Image 3"></div>
+      <div class="image-link"><img src="https://latinotaxpro.com/cdn/shop/articles/Depositphotos_121240628_L_1200x1200.jpg?v=1709334116" alt="Cybercrime Image 4"></div>
+      <div class="image-link"><img src="https://www.technologyvisionaries.com/wp-content/uploads/2020/01/bigstock-Data-Phishing-Hacker-Attack-t-319270852-scaled.jpg" alt="Cybercrime Image 5"></div>
+    </div>
+  </div>
+
+  <footer>© 2025 Internet Awareness Initiative | Stay Safe Online 🌐</footer>
+</body>
+</html>

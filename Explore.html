@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Various Topics On Internet Usage In Village</title>
+    <style>
+        /* === Global Styling === */
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: fadeIn 1.2s ease-in;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            font-size: 26px;
+            margin-bottom: 30px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        /* === Card Style === */
+        .box {
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #ffffff;
+            opacity: 0;
+            animation: fadeUp 1s forwards;
+        }
+
+        .box:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* === Link Style === */
+        .box a {
+            text-decoration: none;
+            color: #0d47a1;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .box a:hover {
+            color: #1565c0;
+        }
+
+        /* === Section Colors === */
+        .internet-usage { background: #f3e5f5; }
+        .education { background: #e3f2fd; }
+        .frauding { background: #ffebee; }
+        .agriculture { background: #e8f5e9; }
+        .healthcare { background: #fff3e0; }
+        .my-activity { background: #fefbd8; }
+
+        /* === Animations === */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === Responsive === */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            .box {
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Topics On Internet Usage In Village</h1>
+        <ul>
+            <li class="box internet-usage">
+                <h2>Internet Usage in Village</h2>
+                <p>Dive into the trends of internet usage in rural areas and its impact on daily life, education, and economy.</p>
+                <a href="Internet Usage In Village.html" target="_blank">Read more →</a>
+            </li>
+
+            <li class="box education">
+                <h2>Education</h2>
+                <p>Learn about the impact of education in village development and the role of the internet in enhancing learning opportunities.</p>
+                <a href="Education.html" target="_blank">Read more →</a>
+            </li>
+
+            <li class="box frauding">
+                <h2>Frauding</h2>
+                <p>Understand the various types of frauds affecting rural areas and how to protect against them.</p>
+                <a href="Frauding.html" target="_blank">Read more →</a>
+            </li>
+
+            <li class="box agriculture">
+                <h2>Agriculture</h2>
+                <p>Explore advancements in agricultural practices facilitated by internet usage and technology.</p>
+                <a href="Agriculture.html" target="_blank">Read more →</a>
+            </li>
+
+            <li class="box healthcare">
+                <h2>Health Care</h2>
+                <p>Discover how internet connectivity is improving health care services and access to medical information in villages.</p>
+                <a href="HealthCare.html" target="_blank">Read more →</a>
+            </li>
+
+            <li class="box my-activity">
+                <h2>My Activity</h2>
+                <p>Complete details of our project with weekly reports and pictures.</p>
+                <a href="My Activity.html" target="_blank">Read more →</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+

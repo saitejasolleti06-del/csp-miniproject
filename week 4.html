@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Report - Week 4</title>
+  <style>
+    /* Base styling */
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e6f4ea, #f4fff8);
+      color: #333;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffffcc;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(12px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    h1 {
+      color: #2e7d32;
+      text-align: center;
+      font-size: 2.4em;
+      text-shadow: 1px 1px 2px #c8e6c9;
+      margin-bottom: 10px;
+      animation: textPop 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #388e3c;
+      margin: 10px 0;
+      font-weight: 600;
+      font-size: 1.3em;
+    }
+
+    h3 {
+      color: #1b5e20;
+      margin-top: 25px;
+      animation: fadeSlide 1.3s ease;
+    }
+
+    p {
+      background: #e8f5e9;
+      padding: 12px 18px;
+      border-left: 5px solid #4caf50;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(76, 175, 80, 0.15);
+      transition: all 0.3s ease;
+      margin: 10px 0;
+    }
+
+    p:hover {
+      background: #c8e6c9;
+      transform: translateX(10px);
+      box-shadow: 0 6px 18px rgba(76, 175, 80, 0.25);
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .images img {
+      width: 40%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 35px rgba(76, 175, 80, 0.3);
+    }
+
+    /* Floating leaves */
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('https://cdn-icons-png.flaticon.com/512/7662/7662806.png') no-repeat center/contain;
+      opacity: 0.2;
+      animation: floatLeaf 8s ease-in-out infinite;
+    }
+
+    .leaf:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .leaf:nth-child(2) { bottom: 10%; right: 8%; animation-delay: 3s; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes textPop {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes floatLeaf {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(10deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container { padding: 25px; }
+      h1 { font-size: 1.9em; }
+      h2 { font-size: 1.1em; }
+      .images img { width: 80%; max-width: 250px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+
+  <div class="container">
+    <h1>WEEKLY REPORT</h1>
+    <h2>WEEK – 4 (From 27-05-24 to 01-06-24)</h2>
+    <h2>Objective: Survey on the Range of Awareness of Internet Usage in Village</h2>
+    <h2>Detailed Report</h2>
+
+    <h3>Day 1: Introduction</h3>
+    <p>Our team initiated the internet fraud awareness campaign in the village by engaging with local leaders and community members. We discussed the prevalence of internet fraud and its impact on individuals and families. The importance of staying vigilant and informed was emphasized, setting the tone for the days ahead.</p>
+
+    <h3>Day 2: Educational Sessions</h3>
+    <p>We conducted educational sessions to equip villagers with knowledge to identify and prevent internet fraud. Common tactics such as phishing and identity theft were explained, and practical safety tips were provided. Villagers actively participated, eager to learn and safeguard themselves.</p>
+
+    <h3>Day 3: Interactive Workshops</h3>
+    <p>Building on previous lessons, interactive workshops helped villagers simulate real-life fraud scenarios. These exercises improved their ability to recognize suspicious activities and respond effectively, empowering them to stay alert online.</p>
+
+    <h3>Day 4: Digital Literacy Training</h3>
+    <p>We dedicated the day to training villagers on essential digital skills. Topics included creating strong passwords, safe online transactions, and ethical internet usage. The training enhanced both confidence and digital responsibility among participants.</p>
+
+    <h3>Day 5: Awareness Walk and Outreach</h3>
+    <p>An awareness walk was organized through the village, engaging residents and distributing informational materials. Villagers enthusiastically participated and extended outreach to nearby communities, promoting online safety across a broader audience.</p>
+
+    <h3>Day 6: Reflection and Future Planning</h3>
+    <p>The final day involved reflecting on our achievements and planning sustainable awareness strategies. Villagers expressed gratitude and discussed maintaining cybersecurity vigilance through collaboration with local authorities.</p>
+
+    <div class="images">
+      <img src="week41.jpeg" alt="Week 4 Activity 1">
+      <img src="week42.jpeg" alt="Week 4 Activity 2">
+    </div>
+  </div>
+</body>
+</html>
